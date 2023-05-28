@@ -5,7 +5,10 @@ let bImg;
 let candles=[];
 
 function preload(){
-  gImg=loadImage("ghost.png");
+  gImg=loadImage("ghost normal.gif");
+  cImg=loadImage("candle1.gif");
+  bImg=loadImage("bancground.png");
+
 }
 //Image not supported on Chrome :)
 
@@ -25,7 +28,7 @@ if (random(1)<0.005){
   candles.push(new Candle());
 }
 
-  background(220);
+  background(bImg);
 ghost.show();
 ghost.move();
 

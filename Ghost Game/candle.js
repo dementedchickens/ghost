@@ -10,7 +10,7 @@ move(){
 }
 
 	show(){
-		rect( this.x, this.y, this.r, this.r);
+		Image(cImg, this.x, this.y, this.r, this.r);
 	}
 }
 
