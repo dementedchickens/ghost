@@ -31,7 +31,7 @@ if (random(1)<0.005){
    text(score, 400, 30);
 }
 function keyTyped(){if (key==" ")
-score=score+5;
+score=score+5;}
 
   background(bImg);
 ghost.show();
@@ -45,6 +45,5 @@ for (let c of candles){
     noLoop();
   }
 }
+}
 
-
-} 
