@@ -36,7 +36,7 @@ score=score+5;}
   background(bImg);
 ghost.show();
 ghost.move();
-
+ 
 for (let c of candles){
   c.move();
   c.show();
