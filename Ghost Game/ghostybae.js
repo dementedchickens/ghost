@@ -3,6 +3,8 @@ let gImg;
 let cImg;
 let bImg;
 let candles=[];
+var score=0;
+
 
 function preload(){
   gImg=loadImage("ghost normal.gif");
@@ -26,7 +28,10 @@ function draw()
 {
 if (random(1)<0.005){
   candles.push(new Candle());
+   text(score, 400, 30);
 }
+function keyTyped(){if (key==" ")
+score=score+5;
 
   background(bImg);
 ghost.show();
